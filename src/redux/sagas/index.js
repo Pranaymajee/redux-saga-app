@@ -5,6 +5,7 @@ import newsSaga from './newsSaga'
 
 export default function* rootSaga() {
     yield all([
-        newsSaga() // CALLING THE RESPECTIVE SAGA WATCHER FUNCTION.
+        newsSaga(), // CALLING THE RESPECTIVE SAGA WATCHER FUNCTION.
+        //CALL ALL WATCHER SAGA FUNCTIONS HERE ONE BY ONE
     ])
 }
