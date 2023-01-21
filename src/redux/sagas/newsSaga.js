@@ -18,7 +18,7 @@ function* fetchNews() {
     try{
         const responseData = yield call(() => axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=a808d7243f20469c810b10af5f78183c`));
         // PUTTING(SENDING) THE RESPONSE DATA TO THE REDUCER WITH THE TYPE NAME "GET_NEWS_SUCCESS"
-        yield put({ type: 'GET_NEWS_SUCCESS', payload: responseData }); // PASSING THE RESPONSE IN THE PAYLOAD
+        yield put({ type: 'GET_NEWS_SUCCESS', payload: responseData }); // PASSING THE RESPONSE IN THE payload
     }
     catch(err){
         console.log(err);// CATCHING ANY ERRORS.
